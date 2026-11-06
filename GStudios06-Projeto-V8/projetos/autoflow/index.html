@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoFlow | Automação Inteligente</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<aside class="sidebar">
+  <div class="logo"><b>G</b><span>AutoFlow</span></div>
+  <nav>
+    <a class="active" href="#dashboard">▦ <span>Dashboard</span></a>
+    <a href="#automacoes">⚡ <span>Automações</span></a>
+    <a href="#atividades">◷ <span>Atividades</span></a>
+    <a href="#integracoes">◎ <span>Integrações</span></a>
+  </nav>
+  <div class="side-bottom"><small>POWERED BY</small><strong>GStudios06</strong></div>
+</aside>
+
+<main>
+<header class="topbar"><div><span class="eyebrow">CENTRAL DE AUTOMAÇÃO</span><h1>Dashboard</h1></div><button class="profile">GS <span>GStudios</span></button></header>
+
+<section id="dashboard" class="stats">
+  <article><span>Automações ativas</span><strong>12</strong><em>+2 este mês</em></article>
+  <article><span>Execuções hoje</span><strong id="exec">1.284</strong><em>+18,4% vs. ontem</em></article>
+  <article><span>Tempo economizado</span><strong>38h</strong><em>estimado no mês</em></article>
+  <article><span>Taxa de sucesso</span><strong>98,7%</strong><em>últimos 30 dias</em></article>
+</section>
+
+<section class="grid-main">
+  <article class="panel chart-panel">
+    <div class="panel-head"><div><h2>Execuções</h2><p>Volume de automações nos últimos 7 dias</p></div><span class="badge">● ONLINE</span></div>
+    <div class="chart">
+      <div class="bars"><i style="height:42%"></i><i style="height:58%"></i><i style="height:50%"></i><i style="height:76%"></i><i style="height:64%"></i><i style="height:88%"></i><i style="height:96%"></i></div>
+      <div class="days"><span>SEG</span><span>TER</span><span>QUA</span><span>QUI</span><span>SEX</span><span>SÁB</span><span>DOM</span></div>
+    </div>
+  </article>
+  <article class="panel">
+    <div class="panel-head"><div><h2>Atividade recente</h2><p>Últimas execuções</p></div></div>
+    <div class="activity">
+      <div><b>✓</b><span>Lead recebido<br><small>WhatsApp → CRM</small></span><time>agora</time></div>
+      <div><b>✓</b><span>Relatório enviado<br><small>CRM → E-mail</small></span><time>5 min</time></div>
+      <div><b>✓</b><span>Pedido processado<br><small>Loja → Planilha</small></span><time>12 min</time></div>
+      <div><b>!</b><span>Webhook aguardando<br><small>Integração externa</small></span><time>18 min</time></div>
+    </div>
+  </article>
+</section>
+
+<section id="automacoes" class="panel automations">
+  <div class="panel-head"><div><h2>Suas automações</h2><p>Fluxos configurados para trabalhar por você.</p></div><button class="add" id="newAutomation">+ NOVA AUTOMAÇÃO</button></div>
+  <div class="table">
+    <div class="tr th"><span>Automação</span><span>Fluxo</span><span>Status</span><span>Execuções</span></div>
+    <div class="tr"><strong>Captura de Leads</strong><span>WhatsApp → CRM</span><span class="on">ATIVA</span><span>428</span></div>
+    <div class="tr"><strong>Follow-up automático</strong><span>CRM → WhatsApp</span><span class="on">ATIVA</span><span>317</span></div>
+    <div class="tr"><strong>Relatório diário</strong><span>Dados → E-mail</span><span class="on">ATIVA</span><span>124</span></div>
+    <div class="tr"><strong>Cadastro de clientes</strong><span>Formulário → Planilha</span><span class="off">PAUSADA</span><span>86</span></div>
+  </div>
+</section>
+
+<section id="integracoes" class="integrations">
+  <div><span class="eyebrow">INTEGRAÇÕES</span><h2>Conecte suas ferramentas.</h2><p>Um ecossistema simples para eliminar tarefas repetitivas.</p></div>
+  <div class="chips"><span>WhatsApp</span><span>Google Sheets</span><span>Gmail</span><span>CRM</span><span>API</span><span>IA</span></div>
+</section>
+
+<footer>AutoFlow é um projeto demonstrativo desenvolvido pela <b>GStudios06</b>. Dados exibidos são fictícios.</footer>
+</main>
+<div class="toast" id="toast">Automação criada com sucesso! ⚡</div>
+<script src="js/script.js"></script>
+</body></html>

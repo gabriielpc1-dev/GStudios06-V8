@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GDrive Automóveis — estoque de veículos selecionados. Projeto demonstrativo desenvolvido pela GStudios06.">
+<title>GDrive Automóveis | Seu próximo carro começa aqui</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#inicio"><span class="brand-icon">GD</span><span>GDrive <b>Automóveis</b></span></a>
+  <button class="menu" aria-label="Abrir menu">☰</button>
+  <nav><a href="#inicio">Início</a><a href="#estoque">Estoque</a><a href="#sobre">A loja</a><a href="#contato">Contato</a></nav>
+  <a class="header-whats" href="https://wa.me/5547991586945" target="_blank">WhatsApp</a>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">GDRIVE AUTOMÓVEIS · BLUMENAU</span>
+    <h1>Seu próximo carro<br><em>começa aqui.</em></h1>
+    <p>Veículos selecionados, atendimento direto e uma experiência simples para você encontrar o carro certo.</p>
+    <div class="hero-actions"><a class="btn primary" href="#estoque">Ver estoque</a><a class="btn ghost" href="#contato">Falar com a loja</a></div>
+    <div class="trust"><span>✓</span> Estoque atualizado · Atendimento pelo WhatsApp</div>
+  </div>
+  <div class="hero-car">
+    <img class="hero-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jeep_Compass_101139.jpg" alt="Jeep Compass 2024 em destaque">
+    <div class="hero-photo-overlay"></div>
+    <div class="hero-badge">DESTAQUE</div>
+    <div class="hero-car-info"><small>2024 · AUTOMÁTICO</small><strong>Jeep Compass</strong><b>R$ 149.990</b></div>
+  </div>
+</section>
+
+<section id="estoque" class="section stock">
+  <div class="section-top"><div><span class="eyebrow">ESTOQUE</span><h2>Encontre seu próximo carro.</h2></div><p>Projeto demonstrativo: todos os veículos e valores desta página são fictícios.</p></div>
+  <div class="filters">
+    <input id="search" type="search" placeholder="Buscar marca ou modelo...">
+    <select id="brand"><option value="">Todas as marcas</option><option>Volkswagen</option><option>Chevrolet</option><option>Toyota</option><option>Jeep</option><option>Renault</option></select>
+    <select id="gear"><option value="">Todos os câmbios</option><option>Automático</option><option>Manual</option></select>
+    <select id="maxPrice"><option value="">Qualquer preço</option><option value="80000">Até R$ 80 mil</option><option value="120000">Até R$ 120 mil</option><option value="160000">Até R$ 160 mil</option></select>
+  </div>
+  <div id="cars" class="cars"></div>
+  <p id="empty" class="empty">Nenhum veículo encontrado com esses filtros.</p>
+</section>
+
+<section id="sobre" class="section about">
+  <div><span class="eyebrow">A LOJA</span><h2>Compra de carro sem complicação.</h2></div>
+  <div class="about-copy"><p>A GDrive Automóveis é um conceito de revenda criado como projeto demonstrativo para o portfólio da GStudios06.</p><p>A proposta combina catálogo digital, filtros, informações claras e contato direto para transformar visitantes em oportunidades de venda.</p><div class="numbers"><div><strong>+50</strong><span>veículos no estoque</span></div><div><strong>4.9</strong><span>avaliação dos clientes</span></div><div><strong>100%</strong><span>atendimento direto</span></div></div></div>
+</section>
+
+<section id="contato" class="contact">
+  <div><span class="eyebrow">FALE COM A GDRIVE</span><h2>Gostou de algum veículo?</h2><p>Chame no WhatsApp e receba mais informações, fotos e condições.</p></div>
+  <a class="btn primary big" href="https://wa.me/5547991586945" target="_blank">Chamar no WhatsApp →</a>
+</section>
+</main>
+
+<footer><div class="brand"><span class="brand-icon">GD</span><span>GDrive <b>Automóveis</b></span></div><p>Projeto demonstrativo desenvolvido pela GStudios06.</p><a href="#inicio">Voltar ao topo ↑</a></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

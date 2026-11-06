@@ -1,0 +1,1 @@
+const btn=document.getElementById("newAutomation"),toast=document.getElementById("toast");btn.addEventListener("click",()=>{toast.classList.add("show");let n=document.getElementById("exec"),v=parseInt(n.textContent.replace(".",""));n.textContent=(v+1).toLocaleString("pt-BR");setTimeout(()=>toast.classList.remove("show"),2600)});
